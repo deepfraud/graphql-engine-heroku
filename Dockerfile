@@ -8,7 +8,8 @@ ENV HASURA_GRAPHQL_ENABLE_CONSOLE=true
 CMD graphql-engine \
     --database-url $DATABASE_URI \
     serve \
-    --port $PORT
+    --server-port $PORT
+    --enable-console
 
 ## Comment the command above and use the command below to
 ## enable an access-key and an auth-hook
