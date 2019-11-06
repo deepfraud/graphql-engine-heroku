@@ -8,7 +8,6 @@ ENV HASURA_GRAPHQL_ENABLE_CONSOLE=true
 CMD graphql-engine \
     --database-url $DATABASE_URI \
     serve \
-    --server-port $PORT \
     --port $PORT
     
 ## Comment the command above and use the command below to
